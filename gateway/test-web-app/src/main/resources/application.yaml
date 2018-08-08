@@ -1,0 +1,17 @@
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 3
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://106.75.216.40:8761/eureka/}
+server:
+  port: 10083
+spring:
+  application:
+    name: test-web
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
