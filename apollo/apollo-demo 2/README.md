@@ -11,8 +11,7 @@
         </dependency>
 ```
 
-## 2、
-## 操作说明：在bootstrap阶段注入默认application namespace的配置示例
+## 2、在bootstrap阶段注入默认application namespace的配置示例
 - 在bootstrap阶段注入默认application namespace的配置示例
 ```text
      # will inject 'application' namespace in bootstrap phase
@@ -25,6 +24,7 @@
      apollo.bootstrap.namespaces = application,FX.apollo
 ```
 
+## 操作说明：
 同样的，当用户在界面上的demo项目中的application namespace中修改配置项的时候，此程序会在控制台输出发生改变项的最新值。比如：
 ```text
 Changes for namespace application
