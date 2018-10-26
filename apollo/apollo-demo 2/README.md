@@ -1,10 +1,18 @@
 # apollo-demo 2
-vm options:
--Denv=dev -Dapp.id=demo -Ddev_meta=http://106.75.215.109:8080
-
-## 操作说明：
 与上一个demo不同的是apollo-demo 2主要是通过在Spring Boot初始bootstrap阶段注入配置。
 
+## 1、在Maven pom.xml中引入依赖：
+```text
+        <!--import apollo-client-->
+        <dependency>
+            <groupId>com.ctrip.framework.apollo</groupId>
+            <artifactId>apollo-client</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+```
+
+## 2、
+## 操作说明：在bootstrap阶段注入默认application namespace的配置示例
 - 在bootstrap阶段注入默认application namespace的配置示例
 ```text
      # will inject 'application' namespace in bootstrap phase
