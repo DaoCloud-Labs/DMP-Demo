@@ -12,6 +12,12 @@
 - gateway:提供了几个简单的api接口：
 	- test-web-app：可将该应用启动后，在DMP平台上面针对这些api做一些关于路由策略的操作，同时，可将该服务注册至eureka-server中。
 
+- eureka-api:提供了一个Docker镜像，该镜像里面包含了一个简单的Java Spring Boot的应用。
+	- 该应用会通过Eureka地址注册到Eureka服务注册中心，同时提供了许多接口。
+	- 该应用还会接入到配置中心，并从配置中心拉取配置。
+
+- skywalking-agent-demo:提供了一个接入链路追踪的镜像。
+
 - skwwalking：提供了java应用接入skywalking的几个例子：
 	- dmp-skywalking-agent-examples-master：
 		- dmp-skywalking-agent-trace-activation-demo：通过在代码中添加@Trace注解实现手动追踪。
