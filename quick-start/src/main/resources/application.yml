@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ${SW_AGENT_NAME:quick-start-demo}
+
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+
+quick:
+  start: Hello World, Hello DMP!
