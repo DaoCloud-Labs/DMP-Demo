@@ -1,6 +1,14 @@
 # DMP Quick Start
 
-## mvn
+该项目演示了Spring Boot应用接入DMP平台以及相应的改造。
+
+主要包括： 服务注册中心、配置中心、服务监控、实例监控四个模块的接入。
+
+具体每个模块怎么改造可参考[DMP用户接入手册](https://daocloud-labs.github.io/DMP-Public-Docs/)相关小节介绍。
+
+
+
+## 如果你对maven和Docker比较熟悉，你可以使用以下方式来构建并运行：
 
  ```bash 
  mvn clean package -DskipTests 
@@ -9,6 +17,8 @@
  
  # mvn dockerfile:push
  ```
+ 
+ ## 如果你想快速开始，可以直接运行如下命令：
  
 ```bash
 
